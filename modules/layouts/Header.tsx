@@ -21,7 +21,7 @@ function Header() {
           />
         </Link>
 
-         <div className="flex w-32 relative mx-4">
+         <div className="flex w-36 relative mx-4">
           <Search
             size={18}
             className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
