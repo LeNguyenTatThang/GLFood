@@ -3,6 +3,7 @@ import "./globals.css"
 import Header from "@/modules/layouts/Header"
 import Footer from "@/modules/layouts/Footer"
 import { beVietnam } from "@/modules/fonts"
+import { SearchProvider } from "@/modules/SearchContext"
 
 export const metadata: Metadata = {
   title: "Gia Lai Food",
@@ -17,9 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={beVietnam.className}>
-        <Header />
-          {children}
-        <Footer />
+        <SearchProvider>
+          <Header />
+            {children}
+          <Footer />
+        </SearchProvider>
       </body>
     </html>
   );

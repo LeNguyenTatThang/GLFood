@@ -4,9 +4,27 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import products from "@/modules/data"
 import ProductSkeleton from "@/modules/ProductSkeleton"
+import { useSearch } from "@/modules/SearchContext"
+
+const removeVietNamTone = (str: string) => {
+  return str
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/đ/g, "d")
+    .replace(/Đ/g, "D")
+    .toLowerCase()
+    .trim()
+}
 
 export default function Home() {
   const isLoading = false
+  const { keyword } = useSearch()
+
+  const filteredProducts = products.filter((product) =>
+    removeVietNamTone(product.name).includes(removeVietNamTone(keyword))
+  )
+
+  const productsToShow = keyword ? filteredProducts : products
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
@@ -16,7 +34,7 @@ export default function Home() {
           ? Array.from({ length: 10 }).map((_, i) => (
               <ProductSkeleton key={i} />
             ))
-          : products.map((item, index) => (
+          : productsToShow.map((item, index) => (
               <motion.div
                 key={item.id}
                 initial={{ opacity: 0, y: 30 }}
