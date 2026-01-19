@@ -2,15 +2,15 @@ const products = [
   {
     id: 1,
     name: "Mật ong rừng",
-    price: "500.000đ",
-    weight: "1lít",
+    price: "250.000đ",
+    weight: "500ml",
     image: "/food/matong.jpg",
   },
   {
     id: 2,
     name: "Hạt Macca sấy",
     price: "100.000đ",
-    weight: "500kg",
+    weight: "500g",
     image: "/food/macca.jpg",
   },
   {
@@ -30,36 +30,36 @@ const products = [
   {
     id: 5,
     name: "Mít sấy giòn",
-    price: "220.000đ",
-    weight: "1kg",
+    price: "110.000đ",
+    weight: "500g",
     image: "/food/mitsay.jpg",
   },
   {
     id: 6,
     name: "Hạt dẻ cười",
-    price: "400.000đ",
-    weight: "1kg",
+    price: "200.000đ",
+    weight: "500g",
     image: "/food/hatde.jpg",
   },
   {
     id: 7,
     name: "Hạt điều rang muối",
-    price: "270.000đ",
-    weight: "1kg",
+    price: "135.000đ",
+    weight: "500g",
     image: "/food/hatdieu.jpg",
   },
   {
     id: 8,
     name: "Hạt bí rang củi",
-    price: "120.000đ",
-    weight: "1kg",
+    price: "60.000đ",
+    weight: "500g",
     image: "/food/hatbi.jpg",
   },
   {
     id: 9,
     name: "Hạnh nhân rang bơ",
-    price: "250.000đ",
-    weight: "1kg",
+    price: "125.000đ",
+    weight: "500g",
     image: "/food/hanhnhan.jpg",
   },
   {
@@ -72,8 +72,8 @@ const products = [
   {
     id: 11,
     name: "Trái say",
-    price: "120.000đ",
-    weight: "1kg",
+    price: "60.000đ",
+    weight: "500g",
     image: "/food/traisay.jpg",
   }
 ]
