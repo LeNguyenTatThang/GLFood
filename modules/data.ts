@@ -16,7 +16,7 @@ const products = [
   {
     id: 3,
     name: "Cafe nguyên chất",
-    price: "14.000đ",
+    price: "140.000đ",
     weight: "500g",
     image: "/food/cafe.jpg",
   },
