@@ -1,7 +1,7 @@
 "use client"
 import React from "react"
 import Link from "next/link"
-import { ShoppingCart, Search  } from "lucide-react"
+import { ShoppingCart, Search } from "lucide-react"
 import Image from "next/image"
 import { useSearch } from "@/modules/SearchContext"
 
@@ -10,7 +10,7 @@ function Header() {
   return (
     <header className="w-full bg-[#1C1C1C] backdrop-blur-sm">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
-        
+
         <Link href="/" className="flex items-center gap-2">
           <Image
             width={100}
@@ -21,7 +21,7 @@ function Header() {
           />
         </Link>
 
-         <div className="flex w-36 relative">
+        <div className="flex flex-1 relative mx-4 md:w-80 md:flex-none md:mx-0">
           <Search
             size={18}
             className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
