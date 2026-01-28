@@ -51,7 +51,7 @@ const products = [
   {
     id: 8,
     name: "Hạt bí rang củi",
-    price: "60.000đ",
+    price: "100.000đ",
     weight: "500g",
     image: "/food/hatbi.jpg",
   },
