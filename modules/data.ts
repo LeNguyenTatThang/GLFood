@@ -44,7 +44,7 @@ const products = [
   {
     id: 7,
     name: "Hạt điều rang muối",
-    price: "135.000đ",
+    price: "150.000đ",
     weight: "500g",
     image: "/food/hatdieu.jpg",
   },
