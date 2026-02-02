@@ -30,7 +30,7 @@ const products = [
   {
     id: 5,
     name: "Mít sấy giòn",
-    price: "110.000đ",
+    price: "120.000đ",
     weight: "500g",
     image: "/food/mitsay.jpg",
   },
@@ -65,14 +65,14 @@ const products = [
   {
     id: 10,
     name: "Say ngào đường",
-    price: "105.000đ",
+    price: "115.000đ",
     weight: "450g",
     image: "/food/say.jpg",
   },
   {
     id: 11,
     name: "Trái say",
-    price: "60.000đ",
+    price: "70.000đ",
     weight: "500g",
     image: "/food/traisay.jpg",
   }
