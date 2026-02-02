@@ -58,7 +58,7 @@ const products = [
   {
     id: 9,
     name: "Hạnh nhân rang bơ",
-    price: "125.000đ",
+    price: "130.000đ",
     weight: "500g",
     image: "/food/hanhnhan.jpg",
   },
